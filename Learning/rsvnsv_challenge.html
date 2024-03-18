@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            color: rgb(15, 150, 145);
+            text-align: center;
+            font-size: 2rem; 
+        }
+        .boxmain {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px;
+        }
+        .f_box, .s_box, .t_box, .fo_box {
+            flex: 1 0 300px; 
+            height: 400px;
+            margin: 10px; 
+            background-color: gray;
+            border: 2px solid black;
+            text-align: center;
+        }
+        @media screen and (max-width: 1000px) { 
+            .f_box, .s_box, .t_box, .fo_box {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .f_box, .s_box, .t_box, .fo_box {
+                flex-basis: calc(100% - 20px);  }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Responsiveness of Site using media query</h1>
+    </div>
+    <div class="boxmain">
+        <div class="f_box">
+            <h3>Name 1:- BOX 1</h3>
+        </div>
+        <div class="s_box">
+            <h3>Name 2:- BOX 2</h3>
+        </div>
+        <div class="t_box">
+            <h3>Name 3:- BOX 3</h3>
+        </div>
+        <div class="fo_box">
+            <h3>Name 4:- BOX 4</h3>
+        </div>
+    </div>
+</body>
+</html>

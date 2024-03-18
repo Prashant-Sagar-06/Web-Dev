@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap:8px ;
+            grid-template-columns:repeat(5,1fr);
+        }
+        .all{
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+        .ek{
+            display: grid;
+            grid-gap:8px;
+            grid-row-start:1;
+            grid-row-end:95;
+        }
+        .do{
+            display: grid;
+            grid-gap:8px;
+            grid-row-start:1;
+            grid-row-end:95;
+        }
+        .teen{
+            display: grid;
+            grid-gap:8px;
+            grid-row-start:1;
+            grid-row-end:95;
+        }
+        .chaar{
+            display: grid;
+            grid-gap:8px;
+            grid-row-start:1;
+            grid-row-end:95;
+        }
+        .paanch{
+            display: grid;
+            grid-gap:8px;
+            grid-row-start:1;
+            grid-row-end:95;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="ek">
+                <div class="11 all">11</div>
+            </div>    
+            <div class="do"> 
+                <div class="21 all">21</div>
+                <div class="22 all">22</div>
+            </div>
+            <div class="teen">
+                <div class="31 all">31</div>
+                <div class="32 all">32</div>
+                <div class="33 all">33</div>
+            </div>    
+            <div class="chaar">
+                <div class="41 all">41</div>
+                <div class="42 all">42</div>
+                <div class="43 all">43</div>
+                <div class="44 all">44</div>
+            </div>    
+            <div class="paanch">
+                <div class="51 all">51</div>
+                <div class="52 all">52</div>
+                <div class="53 all">53</div>
+                <div class="54 all">54</div>
+                <div class="55 all">55</div>
+            </div>
+        </div>        
+</body>
+</html>
