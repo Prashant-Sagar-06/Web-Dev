@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App Project </title>
+  <link rel="stylesheet" href="weather.css">
+  <script src="Weather.js" defer></script>
+</head>
+<body onload="getUserCoordinates()">
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="container">
+    <div class="weather-input">
+      <h3>Enter a City Name</h3>
+      <input class="city-input" type="text" id="cityInput" placeholder="E.g., Delhi, London, Tokyo">
+      <button class="search-btn" onclick="searchByCity()">Search</button>
+      <div class="separator"></div>
+      <button class="location-btn" onclick="getUserCoordinates()">Use Current Location</button>
+    </div>
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2><span id="cityName">City Name</span> (<span id="weatherDesc">Weather Description</span>)</h2>
+          <h6>Temperature: <span id="temperature">__°C</span></h6>
+          <h6>Wind: <span id="windSpeed">__ M/S</span></h6>
+          <h6>Humidity: <span id="humidity">__%</span></h6>
+        </div>
+      </div>
+      <div class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul class="weather-cards" id="forecastList">
+          <!-- Forecast data will be inserted here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
