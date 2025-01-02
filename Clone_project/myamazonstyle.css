@@ -13,18 +13,17 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.nav-logo{
-    height: 50px;
-    width: 100px;
-    justify-content: center;
+.nav-logo {
+    height: 50px; 
+    width: 120px;  /* Set width to fit navbar proportion */
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
-.logo{
-    background-image: url(../imgprjct/Copy\ of\ amazon_logo.png);
-    height: 50px;
-    width: 100%;
-    background-size: cover;
-    
+
+.amazon-logo {
+    height: 40px;  /* Slightly smaller than nav height */
+    width: auto;   /* Keep aspect ratio */
 }
 
 .border{
@@ -137,7 +136,7 @@
 
 /**HEROOOOO**/
 .hero_sec{
-    background-image: url(../imgprjct/GW-Hero-PC_BBAug23_Soft-toys_with-Apay_Lifestyle_2x._CB597740150_.jpg);
+    background-image: url(../Clone_project/imagecollections/GW-Hero-PC_BBAug23_Soft-toys_with-Apay_Lifestyle_2x._CB597740150_.jpg);
     height: 350px;
     background-size: cover;
     display: flex;
@@ -179,7 +178,7 @@
     margin-top: 15px;
 }
 .box1-image{
-    background-image: url(../imgprjct/1boximg.jpg);
+    background-image: url(../Clone_project/imagecollections/OIP.jpeg);
     height:307px;
     width: 277px;
 }
@@ -239,7 +238,7 @@ ul a{
 }
 
 .logo{
-    background-image: url(../imgprjct/Copy\ of\ amazon_logo.png);
+    background-image: url(../imagecollections/Copy\ of\ amazon_logo.png);
     height: 50px;
     width: 100px;
     background-size: cover;
