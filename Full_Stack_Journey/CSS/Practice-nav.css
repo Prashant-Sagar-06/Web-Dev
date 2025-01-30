@@ -64,3 +64,16 @@
             padding: 10px 20px;
             margin: 10px;
         }
+        @media screen and (max-width: 768px){
+            ol{
+                display: none;
+            }
+            .search-container{
+                display: none;
+            }
+            :root{
+                --maincolor: #410505;
+                --secondarycolor: rgb(107, 72, 72);
+            }
+            
+        }
