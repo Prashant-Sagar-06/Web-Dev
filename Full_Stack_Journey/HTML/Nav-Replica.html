@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit NavBar Replica</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #4e7581;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navimage{
+            margin-left: 130px;
+            margin-top: 10px;
+        }
+        .navlinks{
+            margin-right: 130px;
+            display: flex;
+            align-items: center;
+        }
+        .navlinks ul {
+            list-style: none;
+            display: flex;
+        }
+        .navlinks li {
+            position: relative;
+            margin: 0 15px;
+        }
+        .navlinks a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #4e7581;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+        }
+        .navlinks li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navimage">
+            <img src="../Images/UE-Logo-1.webp" alt="Site Logo" height="55px">
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <div class="dropdown">
+                        <a href="#">Web Development</a>
+                        <a href="#">App Development</a>
+                        <a href="#">SEO</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
